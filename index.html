@@ -1,0 +1,281 @@
+﻿<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZLATÁ TRUHLICE | Doména na prodej</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfaf0;
+            color: #2c2511;
+            line-height: 1.6;
+        }
+
+        /* Hlavní obal stránky (vycentrování na střed) */
+        .wrapper {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        /* Hlavní karta */
+        .card {
+            background: #ffffff;
+            border: 3px solid #d4af37;
+            border-radius: 16px;
+            padding: 40px 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(218, 165, 32, 0.2);
+        }
+
+        /* Logo */
+        .logo-img {
+            max-width: 320px;
+            width: 100%;
+
+
+            border-radius: 50%;
+            border: 4px solid #d4af37;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            margin-bottom: 25px;
+        }
+
+        /* Status "Na prodej" - upoutání pozornosti */
+        .sale-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #b8860b 0%, #ffd700 100%);
+            color: #1a1400;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgba(184, 134, 11, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #5c4500;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .domain-name {
+            font-size: 1.3rem;
+            color: #b8860b;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Lákavý text pro investory / kupce */
+        .pitch-text {
+            font-size: 1.15rem;
+            color: #444;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 35px;
+            text-align: left;
+        }
+
+        .feature-item {
+            background: #fdf6d8;
+            border: 1px solid #e6c200;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            color: #5c4500;
+        }
+
+        .feature-item strong {
+            display: block;
+            color: #b8860b;
+            margin-bottom: 5px;
+        }
+
+        /* Kontaktní tlačítko */
+        .contact-box {
+            margin-bottom: 40px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background: #2c2511;
+            color: #ffd700;
+            text-decoration: none;
+            padding: 15px 35px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 2px solid #d4af37;
+            transition: all 0.2s;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        }
+
+        .contact-btn:hover {
+            background: #443819;
+            transform: translateY(-2px);
+        }
+
+        /* Propracované počítadlo návštěv */
+        .stats-section {
+            border-top: 1px dashed #d4af37;
+            padding-top: 25px;
+            margin-top: 20px;
+        }
+
+        .stats-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #8a6d1c;
+            margin-bottom: 15px;
+        }
+
+        .stats-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            background: #fdfaf0;
+            border: 1px solid #d4af37;
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-family: monospace;
+        }
+
+        .stat-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #b8860b;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: #666;
+            text-transform: uppercase;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="card">
+            
+            <!-- Logo (vlož svůj obrázek) -->
+            <img src="logo.jpg" alt="Zlatá truhlice logo" class="logo-img">
+
+            <div>
+                <span class="sale-badge">Exkluzivní doména na prodej</span>
+            </div>
+
+            <h1>ZLATÁ TRUHLICE</h1>
+            <div class="domain-name">www.zlatatruhlice.cz</div>
+
+            <div class="pitch-text">
+                <p>Hledáte silnou, zapamatovatelnou a prestižní doménu pro svůj budoucí e-shop, investiční portál nebo projekt se zlatem a cennými kovy? Právě jste ji našli.</p>
+            </div>
+
+            <!-- Něco, co připoutá pozornost / výhody domény -->
+            <div class="features-list">
+                <div class="feature-item">
+                    <strong>💎 Silný brand</strong>
+                    Okamžitě vzbuzuje důvěru, hodnotu a asociuje bezpečné uložení majetku.
+                </div>
+                <div class="feature-item">
+                    <strong>🚀 Ideální pro byznys</strong>
+                    Perfektní pro prodej investičního zlata, mincí, šperků nebo sběratelských předmětů.
+                </div>
+                <div class="feature-item">
+                    <strong>⚡ Skvělá zapamatovatelnost</strong>
+                    Chytlavý český název, který zákazníci snadno najdou bez zbytečného hledání.
+                </div>
+            </div>
+
+            <!-- Kontakt -->
+            <div class="contact-box">
+                <p style="margin-bottom: 15px; color: #555; font-weight: 600;">Máte zájem o odkup této domény? Napište svou nabídku:</p>
+                <a href="mailto:vk.invest@email.cz?subject=Zajem%20o%20domenu%20zlatatruhlice.cz" class="contact-btn">
+                    ✉️ vk.invest@email.cz
+<br>                
+</a>
+
+<p style="margin-bottom: 15px; color: #555; font-weight: 600;">
+  Máte zájem o nákup českých mincí? Prohlídněte si mou další stránku:<br>
+  
+<a href="https://www.ceskamince.cz" target="_blank" rel="noopener noreferrer">Odkaz na ČeskáMince.cz</a>
+</p>
+            </div>
+
+            <!-- Propracované počítadlo návštěv (Statistiky) -->
+            <div class="stats-section">
+                <div class="stats-title">Statistiky návštěvnosti domény</div>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number" id="stat-week">142</div>
+                        <div class="stat-label">Tento týden</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" id="stat-month">589</div>
+                        <div class="stat-label">Tento měsíc</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number" id="stat-total">1 840</div>
+                        <div class="stat-label">Celkem zobrazení</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer>
+            &copy; 2026 www.zlatatruhlice.cz | Všechna práva vyhrazena
+        </footer>
+    </div>
+
+    <!-- JavaScript pro simulaci/aktivitu počítadla -->
+    <script>
+        // Jednoduchá ukázka – při každé návštěvě přičte 1 k celkovým zobrazením
+        let totalVisits = localStorage.getItem('zlatatruhlice_total') || 1840;
+        totalVisits = parseInt(totalVisits) + 1;
+        localStorage.setItem('zlatatruhlice_total', totalVisits);
+        
+        // Formátování čísla a zobrazení
+        document.getElementById('stat-total').innerText = totalVisits.toLocaleString('cs-CZ');
+    </script>
+
+</body>
+</html>
